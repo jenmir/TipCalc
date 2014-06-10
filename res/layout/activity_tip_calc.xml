@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jmir.tipcalc.TipCalcActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/amtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="117dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/tipMsgStr"
+        android:textSize="20sp" />
+
+    <!--
+           <EditText
+        android:id="@+id/amtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amtDecimal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/amountStr" >
+    -->
+
+    <EditText
+        android:id="@+id/amtDecimal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:onClick="amtDecClick"
+        android:hint="@string/amountHintTxt"
+        android:inputType="numberDecimal" >
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/pct10btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amtMsg"
+        android:layout_below="@+id/amtDecimal1"
+        android:layout_marginTop="54dp"
+        android:onClick="on10Click"
+        android:text="@string/tenpctStr"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pct15btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pct10btn"
+        android:layout_alignBottom="@+id/pct10btn"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/pct10btn"
+        android:onClick="on15Click"
+        android:text="@string/fifteenpctStr"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pct20btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pct15btn"
+        android:layout_alignBottom="@+id/pct15btn"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/pct15btn"
+        android:onClick="on20Click"
+        android:text="@string/twentypctStr"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tipAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/emptyamtStr"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pctCustombtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pct10btn"
+        android:layout_centerVertical="true"
+        android:onClick="onCustomClickBtn"
+        android:text="@string/customTipStr2" />
+
+    <EditText
+        android:id="@+id/pctCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pctCustombtn"
+        android:layout_alignRight="@+id/pct20btn"
+        android:layout_toRightOf="@+id/pctCustombtn"
+        android:onClick="pctCustomClick"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="@string/enterStr" />
+
+</RelativeLayout>

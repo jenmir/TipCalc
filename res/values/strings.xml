@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="amountStr">Enter amount...</string>
+    <string name="tenpctStr">10%</string>
+    <string name="fifteenpctStr">15%</string>
+    <string name="twentypctStr">20%</string>
+    <string name="tipMsgStr">Tip amount is:</string>
+    <string name="ellipsesStr">...</string>
+    <string name="amountHintTxt">Enter amount...</string>
+    <string name="emptyamtStr">$____</string>
+    <string name="customTipStr">Custom amount</string>
+    <string name="customTipStr2">Custom %</string>
+    <string name="customAmtHint">Enter custom...</string>
+    <string name="enterStr">Enter...</string>
+
+</resources>
